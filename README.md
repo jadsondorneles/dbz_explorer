@@ -12,8 +12,15 @@ Once installed open the directory in the terminal or vscode and run the followin
 Runs the app in the development mode.
 ### `npm start`
 
-## Libraries used
-Axios: Used to make HTTP requests
-Material UI React: Used in Drawer and Circular Loading
-JPList: Used because it facilitates the search and pagination of HTML elements
+## Libraries Used
+ 
+### Axios
+Used to make HTTP requests
+
+### Material UI React
+Used in Drawer and Circular Loading
+
+### JPList
+Used because it facilitates the search and pagination of HTML elements
+
 Styled-Components: Great for standardization in production. Allows you to use component-level styles in the application. They are written in a mixture of JavaScript and CSS.
