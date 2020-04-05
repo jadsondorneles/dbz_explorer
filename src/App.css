@@ -1,0 +1,238 @@
+/************************************************************************
+Dragon Ball Z Explorer
+Ano: 2020
+Autor: Jadson Aires Dorneles
+*************************************************************************/
+@import '../node_modules/product-sans-webfont/GoogleSans.css';
+@import '../node_modules/typeface-poppins/index.css';
+@import './assets/css/normalize.css';
+
+:root {
+  /*CORES*/
+  --primario: #272731;
+  --secundario: #ffca24;
+  --terciario: #ff7515;
+  --branco: #ffffff;
+  --preto: #000000;       
+  --vermelho: #ff7373;
+  --cinza: #4d4d4d;
+  --cinza-claro: #a0a0a0;
+  --verde: #4caf50;
+  --laranja: #ff9800;
+  --amarelo: #ffc107;
+  --marrom: #795548;
+  --roxo: #923f82;
+  --azul: #b1c1da;
+  --alternativo: #e3e3e3;
+  --alternativo2: #303039;
+  --background-body: #272731;
+
+  /*FONTES*/
+  --font-regular: 'Oswald', sans-serif;
+  --font-medium: 'GoogleSansMedium', sans-serif;
+  --font-bold: 'GoogleSansBold', sans-serif;
+  --font-italic: 'GoogleSansItalic', sans-serif;
+  --font-italic-bold: 'GoogleSansBoldItalic', sans-serif;
+  --poppins: 'Poppins', sans-serif;
+}
+
+body, html, #root {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('./assets/img/background.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body,
+a,
+p,
+h1,
+h2,
+h4,
+h4,
+h5,
+h6,
+button,
+div,
+.MuiTypography-body1 {
+  font-family: var(--font-regular), sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  outline: none !important;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+.txt-center {
+  text-align: center !important;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.one-line-txt {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+      bottom: 0;
+  }
+  50% {
+      bottom: 15px;
+  }
+}
+
+@keyframes MoveUpDown2 {
+  0%, 100% {
+      bottom: 0;
+  }
+  50% {
+      bottom: 15px;
+  }
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.rotating {
+  -webkit-animation: rotating 2s linear infinite;
+  -moz-animation: rotating 2s linear infinite;
+  -ms-animation: rotating 2s linear infinite;
+  -o-animation: rotating 2s linear infinite;
+  animation: rotating 2s linear infinite;
+}
+
+.carousel.carousel-slider {
+  height: 133px;
+}
+
+.carousel .slider-wrapper.axis-horizontal .slider .slide {
+  background: transparent;
+}
+
+/* .carousel.carousel-slider .control-arrow {
+  position: absolute;
+  background: var(--terciario);
+  width: 42px;
+  height: 42px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 40px;
+}
+
+.carousel.carousel-slider .control-arrow:hover {
+  background: var(--terciario);
+} */
+
+.carousel .control-dots .dot {
+  background: var(--terciario) !important;
+}
+
+.carousel .slide img {
+  display: none;
+}
+
+.carousel .slide .legend {
+  display: none;
+}
+
+.carousel .carousel-status {
+  top: -73px !important;
+}
+.carousel.carousel-slider .control-arrow {
+  position: absolute;
+  background: var(--terciario) !important;
+  width: 42px;
+  height: 42px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 40px;
+}
+
+.carousel.carousel-slider .control-arrow:hover {
+  background: var(--terciario);
+}
+
+button.control-arrow.control-prev {
+  position: absolute !important;
+  left: auto !important;
+  right: 46px;
+}
+
+.carousel.carousel-slider {
+  overflow: inherit !important;
+}
+
+.carousel .control-arrow, .carousel.carousel-slider .control-arrow {
+  top: -32px !important;
+}
+
+.carousel .thumbs-wrapper {
+  display: none;
+}
+
+.carousel .control-dots {
+  bottom: -24px;
+}
+
+.MuiPaper-root.MuiDrawer-paper.MuiDrawer-paperAnchorLeft {
+  background-color: var(--primario)!important;
+}
+
+@media (max-width: 800px) {
+  .carousel .carousel-status {
+    right: 40px !important;
+  }
+
+  button.control-arrow.control-prev {
+      right: 87px !important;
+  }
+
+  button.control-arrow.control-next {
+      right: 41px !important;
+  }
+}
