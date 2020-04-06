@@ -272,10 +272,9 @@ export const PictureFighter = styled.div`
 `
 
 export const GroupFighter = styled.div`
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    padding-left: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
 `
 
 export const NameFighter = styled.div`

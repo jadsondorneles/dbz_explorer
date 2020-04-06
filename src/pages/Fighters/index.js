@@ -37,7 +37,7 @@ export default function Fighters({ match }) {
     const [loading, setLoading] = useState(false)
     const [errors, setErrors] = useState(false)
     const [data, setData] = useState([])
-    const [fighter, setFighter] = useState([])
+    const [fighter, setFighter] = useState([]) 
 
     const pageNumber = '{pageNumber}'
     const pagesNumber = '{pagesNumber}'
@@ -47,7 +47,6 @@ export default function Fighters({ match }) {
             setLoading(true)
             await api.get('/api/character')
                 .then(response => {
-                    console.log(response.data)
                     setData(response.data)
                     setLoading(false)
                     window["execJPList"]()
@@ -60,7 +59,6 @@ export default function Fighters({ match }) {
             setLoading(true)
             await api.get(`/api/character/${match.params.name}`)
                 .then(response => {
-                    console.log(response.data)
                     setFighter(response.data)
                     setLoading(false)
                 })
