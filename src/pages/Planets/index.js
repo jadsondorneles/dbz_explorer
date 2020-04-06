@@ -137,7 +137,7 @@ export default function Planets({ match }) {
                                                     <Result data-jplist-group="dbzexplorer">
                                                         {
                                                             data.map((obj, i) => (
-                                                                <ItemResult key={i} data-jplist-item>
+                                                                <ItemResult key={i} data-jplist-item data-testid="items">
                                                                     <Picture image={`https://dragon-ball-api.herokuapp.com/${obj.image.replace('../','')}`} alt=""/>
                                                                     <Name className="title">{obj.name}</Name>
                                                                     <Link to={`/Planets/${obj.name}`}>DETAILS</Link>

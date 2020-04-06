@@ -59,6 +59,7 @@ export default function Fighters({ match }) {
             setLoading(true)
             await api.get(`/api/character/${match.params.name}`)
                 .then(response => {
+                    console.log(response.data)
                     setFighter(response.data)
                     setLoading(false)
                 })

@@ -13,14 +13,14 @@ export default function Home() {
         <ContainerPage id="ContainerPage">
             <ContainerHome id="ContainerHome">
                 <ItemHome id="ItemHome">
-                    <img src={gojetaSS4} alt="Gojeta SS4"/>
+                    <img src={gojetaSS4} alt="Gojeta SS4" data-testid="img"/>
                 </ItemHome>
                 <ItemHome id="ItemHome">
                     <h3>Dragon Ball Z <span>Explorer</span></h3>
                     <p>Explore the entire DBZ world, meet the planets and all the characters</p>
                     <p>Browse and come to know this incredible universe <strong>=)</strong></p>
                     <LinkArea>
-                        <Link to="/Planets">TO DISCOVERY</Link>
+                        <Link to="/Planets" data-testid="btn-home">TO DISCOVERY</Link>
                     </LinkArea>
                 </ItemHome>
             </ContainerHome>
