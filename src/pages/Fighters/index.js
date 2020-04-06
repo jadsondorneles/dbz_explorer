@@ -73,7 +73,7 @@ export default function Fighters({ match }) {
 
     useEffect(() => {
         loadData()
-    })
+    }, [])
 
     return (
 

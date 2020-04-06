@@ -69,7 +69,7 @@ export default function Planets({ match }) {
 
     useEffect(() => {
         loadData()
-    })
+    }, [])
     
     return (
 
